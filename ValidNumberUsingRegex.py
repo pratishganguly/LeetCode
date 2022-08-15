@@ -46,6 +46,5 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        #return re.search("^[+-]?(\d*(\.[\d]+)?)([Ee][+-]?[\d]+)?$", s) is not None
-        return re.search("^[+-]?(\d+\.\d+|\d+\.|\.\d+|\d+)([eE][+-]?\d+)?$", s) is not None
-        #return re.search("^_([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)_", s) is not None
+        return re.search("^[+-]?(\d+|\.\d+|\d+\.\d*)([Ee][+-]?\d+)?$", s) is not None
+
