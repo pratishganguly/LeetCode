@@ -4,8 +4,6 @@ class Solution:
         n = len(grid[0])
         dp = [[-1 for _ in range(n)]for _ in range(m)]
         dp[0][0] = grid[0][0]
-        x = [0,1]
-        y = [1,0]
         for i in range(m):
             for j in range(n):
                 top = dp[i-1][j] if i > 0 else 1e9
